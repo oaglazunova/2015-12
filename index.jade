@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Questoria: Test Task
+    link(href='https://fonts.googleapis.com/css?amp;family=Roboto:400,300,500,700italic,700,500italic,400italic,300italic,900,900italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="css/style.css")
+
+  body
+    svg(style="display: none;" xmlns="http://www.w3.org/2000/svg")  
+      symbol#icon-play(viewbox="100 60 300 390")
+        path(d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z")      
+      
+      
+    .container  
+      header.header
+        .header__age 12+
+        img.header__logo(alt="logo" src="img/logo.png")
+
+
+
+      .main
+        .video 
+          iframe(src="https://www.youtube.com/embed/cd3aSHuKPBQ?enablejsapi=1")
+        .controls
+          a#play.controls__play(href="#") Смотреть
+            svg.controls__icon-play
+              use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play")
+          span.controls__watched Просмотров: 14204
+          a#cancel.controls__cancel(href="#") Отмена
+
+
+
+      footer.footer
+        form.footer__confirm(name="confirmation")          
+          input#confirm.footer__checkbox(type="checkbox" name="confirm" value="confirmed" checked)
+          label.footer__label(for="confirm")
+            span.checkbox
+            span.footer__confirmation Подтверждаю, что люблю мультики, и соглашаюсь с&ensp;
+              a(href="#") правилами предоставления услуги
+        p.footer__info Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС.
+        
+        
+        
+    script(src="js/script.js")
+    
