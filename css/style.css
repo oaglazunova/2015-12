@@ -511,6 +511,7 @@ body {
 .header__logo {
 	width: 100px;
 	height: 30px;
+	cursor: pointer;
 }
 
 .footer {
@@ -673,21 +674,23 @@ body {
 	line-height: 24px;
 }
 
-.video__clock {
+.video__btn-clock {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
 	margin: 0 10px 0 0;
 	background: url("../img/icon-time.png") 50% 50% no-repeat;
 	background-size: contain;
+	cursor: pointer;
 }
 
-.video__share {
+.video__btn-share {
 	display: inline-block;
 	width: 20px;
 	height: 23px;
 	background: url("../img/icon-share.png") 50% 50% no-repeat;
 	background-size: contain;
+	cursor: pointer;
 }
 
 .video__content {
@@ -724,11 +727,12 @@ body {
 .video__bar {
 	content: "";
 	width: 100%;
-	height: 3px;
+	height: 4px;
 	margin: 0 auto 10px;
 	background: #626262;
 	position: relative;
 	border-radius: 200px;
+	cursor: pointer;
 }
 
 .video__bar:after {
@@ -738,13 +742,14 @@ body {
 	background: #ec0623;
 	content: "";
 	border-radius: 200px;
+	cursor: pointer;
 }
 
 .video__controls {
 	padding: 0 20px;
 }
 
-.video__play {
+.video__btn-play {
 	display: inline-block;
 	width: 0;
 	height: 0;
@@ -752,15 +757,17 @@ body {
 	border-style: solid;
 	border-width: 11px 0 11px 20px;
 	border-color: transparent transparent transparent #ffffff;
+	cursor: pointer;
 }
 
-.video__sound {
+.video__btn-sound {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
 	margin: 0 20px 0 0;
 	background: url("../img/icon-sound.png") 50% 50% no-repeat;
 	background-size: contain;
+	cursor: pointer;
 }
 
 .video__time {
@@ -771,13 +778,14 @@ body {
 	vertical-align: super;
 }
 
-.video__size {
+.video__btn-size {
 	display: inline-block;
 	width: 27px;
 	height: 22px;
 	background: url("../img/icon-size.png") 50% 50% no-repeat;
 	background-size: contain;
 	float: right;
+	cursor: pointer;
 }
 
 @media (min-width: 538px) {
