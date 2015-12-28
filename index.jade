@@ -22,8 +22,19 @@ html(lang="ru")
 
 
       .main
-        .video 
-          iframe(src="https://www.youtube.com/embed/cd3aSHuKPBQ?enablejsapi=1")
+        .video
+          .video__top 
+            .video__name Видео HD
+            .video__clock
+            .video__share
+          .video__content
+          .video__panel
+            .video__bar
+            .video__controls
+              .video__play
+              .video__sound
+              .video__time 0:01/15:44            
+              .video__size
         .controls
           a#play.controls__play(href="#") Смотреть
             svg.controls__icon-play
